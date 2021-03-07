@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+    width: 60%;
+    margin: 30px auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+}
+#description{
+    text-align: center;
+}
+
+#survey-form label, p {
+    text-align: left;
+    margin: 25px 5px 10px;
+    text-transform: capitalize;
+}
+
+#survey-form .form-group {
+    text-align: left;
+}
+
+#survey-form #dropdown {
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="number"], .form-group #dropdown {
+    /* min-height: 20px; */
+    padding: 10px 2px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.form-group #dropdown option {
+    color: black;
+}
+
+input[type="submit"] {
+    padding: 10px 0;
+    border: none;
+    color: white;
+    margin: 5px 0;
+    text-transform: capitalize;
+    font-size: 1rem;
+    background-color: teal;
+    font-weight: 600;
+}
+input[type="submit"]:hover{
+    background: rgb(1, 95, 95);
+    cursor: pointer;
+}
+span {
+    font-size: .7rem;
+}
+
+.form-group input[type="radio"] {
+    margin: 10px 0;
+}
+
+.form-group input[type="checkbox"] {
+    margin: 10px;
+}
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+
+}
